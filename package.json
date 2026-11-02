@@ -1,0 +1,16 @@
+{
+  "name": "shop-demo",
+  "version": "1.0.0",
+  "description": "Tiny product catalog demo site",
+  "main": "src/app.js",
+  "private": true,
+  "engines": {
+    "node": ">=22.5"
+  },
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
