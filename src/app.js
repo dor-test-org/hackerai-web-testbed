@@ -2,7 +2,6 @@ const express = require("express");
 const db = require("./db");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
 
 function escapeHtml(value) {
   return String(value)
@@ -66,6 +65,4 @@ app.get("/go", (req, res) => {
   res.redirect(String(req.query.url || "/"));
 });
 
-app.listen(PORT, () => {
-  console.log(`shop-demo listening on port ${PORT}`);
-});
+module.exports = app;
